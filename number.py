@@ -1,7 +1,7 @@
 import random
 if __name__=="__main__":
-    mini=101
-    maxi=0
+    mini=0
+    maxi=101
     num=random.randint(1,100)
     flag=0
     if num > 1:
@@ -33,14 +33,14 @@ if __name__=="__main__":
                     if hint<num and hint>mini: 
                         mini=hint
                         break
-                print("The number is less than",hint)
+                print("The number is greater than",hint)
             elif x==1:
                 while True:
                     hint = random.randint(1, 100)
                     if hint>num and hint<maxi: 
                         maxi=hint
                         break
-                print("The number is greater than",hint)
+                print("The number is lesser than",hint)
             elif x==2:
                 while True:
                     hint = random.randint(2, 100)
